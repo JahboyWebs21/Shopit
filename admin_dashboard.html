@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/shopit_logo.png">
+    <link rel="stylesheet" href="css/dashbord_style.css">
+    <title>ADMIN DASHBOARD</title>
+</head>
+<body>
+    <!-- side menus for desktop starts here -->
+            <div class="holdsidemenu">
+                <div class="carrysidemenu">
+                    <div class="headersidemenu">
+                        <h1>SHOPIT</h1>
+                    </div>
+
+                    <div class="menus">
+                        <nav>
+                            <a href="admin-dashboard.html"><li class="active_menu"><img src="images/avg_pace_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="dash_icon" alt="dashboard_icon">Dashboard</li></a>
+
+                            <a href="orders_admin.html"><li><img src="images/delivery_truck_speed_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="dash_icon" alt="deliver_icon">Orders</li></a>
+
+                            <a href="products_admin.html"><li><img src="images/sell_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="dash_icon" alt="product_icon">Products</li></a>
+
+                            <a href="reviews_admin.html"><li><img src="images/reviews_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="dash_icon" alt="review_icon">Reviews</li></a>
+
+                            <a href="profiles_admins.html"><li><img src="images/user-light-full (1).svg" class="dash_icons" alt="profile_icon">Profiles</li></a>
+
+                            <a href="settings_admin.html"><li><img src="images/gear-solid-full.svg" class="dash_icons" alt="settings_icon">Settings</li></a>
+                        </nav>
+                    </div>
+
+                     <div class="addproductss">
+                        <nav>
+                            <a href="uploadproduct.html"><li><span>+</span> Add Product</li></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    <!-- side menus for desktop ends  here  -->
+
+
+
+    <!-- main website body starts here -->
+     <div class="websitebody">
+        
+       <!-- header starts here -->
+            <div class="holdheaders">
+                <div class="dashboardheading">
+                    <h1>Dashboard</h1>
+                    <span>Manage your data</span>
+                </div>
+
+
+                <div class="holdothersdash">
+                    <img src="images/dark-mode.png" class="header_icons" alt="dark_mode_icon">
+
+                    <img src="images/bell-solid-full.svg" onclick=displaynotifibox() class="header_icons" alt="notification_icon">
+
+                    <img src="images/envelope-solid-full (1).svg" onclick=displaymessagebox() class="header_icons" alt="message_icon">
+
+                    <div class="holdadminnamepic">
+                        <a href="settings_admin.html"><img src="images/avatar_img-removebg-preview.png" class="adminpic" alt="adminprofile_pic"></a>
+
+                        <div class="adminname">
+                            <a href="settings_admin.html">Ozor Stephen Jude<br>
+                            <span>ozorstephenjude22@gmail.com</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        <!-- header ends here -->
+
+
+        
+
+
+        <div class="holdsalesvisitdiv">
+            <div class="carrysalesvisitdiv">
+
+    
+                    <!-- notification div starts here -->
+                    <div class="holdnotificationdiv">
+                        <div class="carrynotificationdiv" id="carrynotificationdiv">
+                            <div class="holdnotiheading">
+                                <h1>Notifications</h1>
+
+                                <img src="images/xmark-solid-full.svg" class="cancelicon" onclick=hidenotifibox() alt="cancel_icon">
+                            </div>
+                            
+                            <div class="notifiinfosss">
+                                <p>Today</p>
+
+                                <div class="userpic">
+                                    <img src="images/20250621_103631.jpg" class="user_imgg" alt="user_img">
+
+                                    <div class="infonotiff">
+                                        Chidi Philips placed an order; Wrist watch, Shoe, Shirt, tie, jean...<br>
+                                        <span>09:00pm</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="userpic">
+                                    <img src="images/20250621_103631.jpg" class="user_imgg" alt="user_img">
+
+                                    <div class="infonotiff">
+                                        Stephen Harved placed an order; Wrist watch, Shoe, Shirt, tie, jean...<br>
+                                        <span>09:00pm</span>
+                                    </div>
+                                </div>
+
+                                <div class="userpic">
+                                    <img src="images/20250621_103631.jpg" class="user_imgg" alt="user_img">
+
+                                    <div class="infonotiff">
+                                        Chidi Philips placed an order; Wrist watch, Shoe, Shirt, tie, jean...<br>
+                                        <span>09:00pm</span>
+                                    </div>
+                                </div>
+                                <!-- today notifications end here -->
+
+                                <hr style="color:gray; border:0.1px solid silver; margin-top:20px;">
+
+                                <!-- past notifications by date starts here -->
+                                <p>12th June 2025</p>
+
+                                
+                                <div class="userpic">
+                                    <img src="images/20250621_103631.jpg" class="user_imgg" alt="user_img">
+
+                                    <div class="infonotiff">
+                                        Stephen Harved placed an order; Wrist watch, Shoe, Shirt, tie, jean...<br>
+                                        <span>09:00pm</span>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="userpic">
+                                    <img src="images/20250621_103631.jpg" class="user_imgg" alt="user_img">
+
+                                    <div class="infonotiff">
+                                        Stephen Harved placed an order; Wrist watch, Shoe, Shirt, tie, jean...<br>
+                                        <span>09:00pm</span>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="userpic">
+                                    <img src="images/20250621_103631.jpg" class="user_imgg" alt="user_img">
+
+                                    <div class="infonotiff">
+                                        Stephen Harved placed an order; Wrist watch, Shoe, Shirt, tie, jean...<br>
+                                        <span>09:00pm</span>
+                                    </div>
+                                </div>
+                                <!--past notifications by date ends here-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- notification div ends here -->
+
+         
+                <div class="smallerdivs">
+                    <p>Active Sales<p>
+                    <h1><span>N</span>4039.00</h1>
+                    48% increase last month
+                </div>
+
+                <div class="smallerdivs">
+                    <p>Available Products</p>
+                    <h1><span></span>45881.00</h1>
+                    30% increase last month
+                </div>
+
+                <div class="smallerdivs">
+                    <p>Visits</p>
+                    <h1><span></span>10371</h1>
+                    48% since last month
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- messages div starts here -->
+            <div class="holdmessagesdiv">
+                <div class="carrymessgesdiv" id="carrymessgesdiv">
+                    <div class="messagesheader">
+                         <h1>Messages</h1>
+
+                        <div class="canceldivv">
+                            <img src="images/xmark-solid-full.svg" onclick=hidemessagebox() alt="cancel_icon">
+                        </div>
+                    </div>
+
+                    
+                        <div class="holdmessagecont">
+                            <div class="singularmesssages">
+                                <img src="images/20250621_103631.jpg" class="userpicture" alt="user_img">
+
+                                <div class="message">
+                                    Hello admin please i placed an order last week, still pending...<br>
+                                    <span>42hours ago</span>
+                                </div>
+                            </div>
+
+
+                             <div class="singularmesssages">
+                                <img src="images/20250621_103631.jpg" class="userpicture" alt="user_img">
+
+                                <div class="message">
+                                    Hello admin please i placed an order last week, still pending...<br>
+                                    <span>42hours ago</span>
+                                </div>
+                            </div>
+
+
+                            
+                            
+                             <div class="singularmesssages">
+                                <img src="images/20250621_103631.jpg" class="userpicture" alt="user_img">
+
+                                <div class="message">
+                                    Hello admin please i placed an order last week, still pending...<br>
+                                    <span>42hours ago</span>
+                                </div>
+                            </div>
+
+
+                             <div class="singularmesssages">
+                                <img src="images/20250621_103631.jpg" class="userpicture" alt="user_img">
+
+                                <div class="message">
+                                    Hello admin when is my order coming havn't received...<br>
+                                    <span>42hours ago</span>
+                                </div>
+                            </div>
+
+                            
+                            
+                             <div class="singularmesssages">
+                                <img src="images/20250621_103631.jpg" class="userpicture" alt="user_img">
+
+                                <div class="message">
+                                    Hello admin please i placed an order last week, still pending...<br>
+                                    <span>42hours ago</span>
+                                </div>
+                            </div>
+
+                            
+                            
+                             <div class="singularmesssages">
+                                <img src="images/20250621_103631.jpg" class="userpicture" alt="user_img">
+
+                                <div class="message">
+                                    Hello admin please i placed an order last week, still pending...<br>
+                                    <span>42hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                   
+                </div>
+            </div>
+        <!-- messages div ends here -->
+
+        <div class="salesdetials">
+            <p>Sales Detials</p>
+
+             <div class="searchbox">
+                <form action="#" method="POST">
+                    <div class="holdsearchbox">
+                        <img src="images/magnifying-glass-solid-full.svg" class="searchicon" alt="search_icon"> <input type="text" name="search" placeholder="Search by customer'name, products and date" value="">
+                    </div>
+                   
+                </form>
+            </div>
+
+            <div class="salesmaindiv">
+                <table>
+                   
+                        <th>Order ID</th>
+                        <th>Date & Time</th>
+                        <th>Customer</th>
+                        <th>Product</th>
+                        <th>Location</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Acton</th>
+                    <tr>
+
+                        <td>1</td>
+                        <td>October 20th 2025<br><span>03:00pm</span></td>
+                        <td>Michael Stephen Job<br><span>michaelstephen34@gmail.com</span></td>
+                        <td>Hair cream 1, Jewelry 2, Sneaker 1, Gown 4.</td>
+                        <td>Choba</td>
+                        <td>30,000</td>
+                        <td>Pending</td>
+                        <td>Confirm</td>
+                        
+                    </tr>
+
+                    <tr>
+
+                        <td>2</td>
+                        <td>July 2nd 2025<br><span>12:00pm</span></td>
+                        <td>Divine Philips<br><span>divinephilips32@gmail.com</span></td>
+                        <td>Hair cream 1, Jewelry 2, Sneaker 1, Gown 4.</td>
+                        <td>Ozuoba</td>
+                        <td>12,000</td>
+                        <td>Pending</td>
+                        <td>Confirm</td>
+                        
+                    </tr>
+
+                    <tr>
+
+                        <td>3</td>
+                        <td>November 12th 2025<br><span>9:00am</span></td>
+                        <td>Loveth Chidi Okenwa<br><span>lovethchidi00@gmail.com</span></td>
+                        <td>Pant 3, Trouser 2, Sneaker 1, Necklace 4.</td>
+                        <td>Rumuodara</td>
+                        <td>2,000</td>
+                        <td>Pending</td>
+                        <td>Confirm</td>
+                        
+                    </tr>
+
+                    <tr>
+
+                        <td>4</td>
+                        <td>July 2nd 2025<br><span>12:00pm</span></td>
+                        <td>Divine Philips<br><span>divinephilips32@gmail.com</span></td>
+                        <td>Hair cream 1, Jewelry 2, Sneaker 1, Gown 4.</td>
+                        <td>Ozuoba</td>
+                        <td>12,000</td>
+                        <td>Pending</td>
+                        <td>Confirm</td>
+                        
+                    </tr>
+
+                    
+                    <tr>
+
+                        <td>5</td>
+                        <td>November 12th 2025<br><span>9:00am</span></td>
+                        <td>Loveth Chidi Okenwa<br><span>lovethchidi00@gmail.com</span></td>
+                        <td>Pant 3, Trouser 2, Sneaker 1, Necklace 4.</td>
+                        <td>Rumuodara</td>
+                        <td>2,000</td>
+                        <td>Pending</td>
+                        <td>Confirm</td>
+                        
+                    </tr>
+                </table>
+                
+            </div>
+            
+        </div>
+     </div>
+
+
+
+     <!-- hover icon for mobile add product start here -->
+      
+        <div class="carryaddproductdiv">
+           <a href="uploadproduct.html"> <img src="images/add_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="add_icon"></a>
+        </div>
+   
+      <!-- hover icon for mobile add product ends here -->
+
+
+
+
+
+
+
+      <!-- mobilebottom mneu starts here -->
+       <div class="holdbotommenuemobile">
+            <div class="carrybottommen">
+                <div class="mobiconss">
+                    <a href="admin_dashboard.html"><img src="images/house-solid-full.svg" class="mobiconssshe" alt="home_icon">
+                    <p>Home</p></a>
+                </div>
+
+                <div class="mobiconss">
+                    <a href="orders_admin.html"><img src="images/delivery_truck_speed_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="mobiconssshe" alt="orders_icon">
+                    <p>Orders</p></a>
+                </div>
+
+                <div class="mobiconss">
+                    <a href="products_admin.html"><img src="images/sell_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="mobiconssshe" alt="product_icon">
+                    <p>Product</p></a>
+                </div>
+
+                
+                <div class="mobiconss">
+                    <a href="reviews_admin.html"><img src="images/reviews_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="mobiconssshe" alt="reviews_icon">
+                    <p>Reviews</p></a>
+                </div>
+
+                
+                <div class="mobiconss">
+                    <a href="profiles_admin.html"><img src="images/user-solid-full.svg" class="mobiconssshe" alt="home_icon">
+                    <p>Profile</p></a>
+                </div>
+            
+            </div>
+        
+       </div>
+      <!-- mobile bottom menu ends hre  -->
+
+
+
+     <!-- main wesbite body ends here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+<!-- javascript code to display notification div starts here -->
+    <script>
+        function displaynotifibox(){
+            const carrynotificationdiv=document.querySelector('.carrynotificationdiv')
+            carrynotificationdiv.style.display='block'
+            carrymessgesdiv.style.display='none'
+              
+        }
+        // hidenotificationbox
+          function hidenotifibox(){
+            const carrynotificationdiv=document.querySelector('.carrynotificationdiv')
+            carrynotificationdiv.style.display='none'
+              
+        }
+    </script>
+ <!-- javascript code to display notification div ends here -->
+
+
+ <!-- javascript code to display message div starts here -->
+    <script>
+        function displaymessagebox(){
+            const carrymessgesdiv=document.querySelector('.carrymessgesdiv')
+            carrymessgesdiv.style.display='block'
+            carrynotificationdiv.style.display='none'
+              
+        }
+        // hidenotificationbox
+          function hidemessagebox(){
+            const carrymessgesdiv=document.querySelector('.carrymessgesdiv')
+            carrymessgesdiv.style.display='none'
+              
+        }
+    </script>
+ <!-- javascript code to display message div ends here -->
+
+
+</body>
+</html>

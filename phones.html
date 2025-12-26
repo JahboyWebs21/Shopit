@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/shopit_logo.png">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>PHONES</title>
+</head>
+<body>
+    
+<!-- header starts here -->
+    <header>
+        <div class="holdheadermenu">
+            <div class="carryheadermeanu">
+                <div class="logo">
+                    SHOPIT
+                </div>
+
+
+                
+                <div class="menus">
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="about_us.html"><li>ABOUT US</li></a>
+                    <a href="contactus.html"><li>CONTACT US</li></a>
+                </div>
+               
+               
+                <div class="navigations">
+                    <a href="cart.html"><li><img src="images/shopping_cart_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="cart_icon"></li></a>
+                    <a href="login.html"><li>LOGIN</li></a>
+                    <a href=""><li>HELP</li></a>
+                </div>
+
+
+                <!-- mobile header menus starts here-->
+                 <div class="holdmobileheaders">
+                    <div class="carrythem">
+                        <a href="cart.html"><img src="images/shopping_cart_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="mobicons" alt="cart icon"></a>
+
+                        <a href="login.html"><img src="images/envelope-solid-full (1).svg" class="mobicons" alt="user_icon"></a>
+
+                        
+                        <img src="images/bell-solid-full.svg" onclick=displaymobmenu() id="mobicons" class="mobicons" alt="menu_tab_icon">
+                        <img src="images/xmark-solid-full.svg" onclick=hidemobmenu() id="mobiconsx" class="mobiconsx" alt="exit_menu_icon">
+                        <!-- mobile menus tab an hide icon ends here -->
+                    </div>
+                 </div>
+                 <!-- mobile header menus ends here -->
+
+            </div>
+        </div>
+    </header>
+
+    <!-- header ends here -->
+
+
+    
+    
+    <!-- mobile menu div starts here -->
+     <div class="bottommobmenu">
+        <div class="carrybottommob" id="carrybottommob">
+            <div class="menumobmen">
+                <a href="home_user.html"><img src="images/house-solid-full.svg" class="mobmenuicon" alt="home_icon"><figcaption>Home</figcaption></a>
+            </div>
+            
+            <div class="menumobmen">
+                <a href="about_us.html"><img src="images/family_group_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="mobmenuicon" alt="about_icon"><figcaption>Aboutus</figcaption></a>
+            </div>
+
+            <div class="menumobmen">
+                <a href="contactus.html"><img src="images/phone_in_talk_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="mobmenuicon" alt="contactus_icon"><figcaption>Contact us</figcaption></a>
+            </div>
+
+            <div class="menumobmen">
+                <a href="user_profile.html"><img src="images/user-solid-full.svg" class="mobmenuicon" alt="user_icon"><figcaption>Profile</figcaption></a>
+            </div>
+            
+        </div>
+     </div>
+
+
+     <!-- mobile menu div ends here -->
+
+
+
+
+     <!-- help static hover image starts here  -->
+            <div class="holdhelpdiv">
+                <img src="images/contact_support_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="helpicon" alt="help_icon">
+            </div>
+      <!-- help static hover image ends here -->
+
+
+
+    <!-- mobile menu div starts here -->
+     <div class="holdmobilemenu">
+        <div class="carrymobilemenu" id="carrymobilemenu">
+            <menus>
+                <a href="about_us.html"><li>About us</li></a>
+                <a href="contactus.html"><li>Contact us</li></a>
+                <a href="login.html"><li>Login</li></a>
+                <a href=""><li>Help</li></a>
+            </menus>
+        </div>
+     </div>
+     <!-- mobile menu div ends here -->
+
+
+<!-- flash sales div starts here -->
+<div class="holdflashsale">
+
+    <div class="flashslaesdivv">
+            <div class="flashsaleslong">
+               <p id="flashdivp"> Moible phones</p>
+
+               
+                    <!-- mobile arrow left to exit searchbox starts here -->
+                     <img src="images/arrow_left_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" class="appearclicksearch" id="appearclicksearch" onclick=hideearchbox() alt="arrow-left">
+                    <!-- mobile arrow left to exit searchboc ends here -->
+
+                    <!-- search box start here -->
+                     <div class="searchbox" id="searchbox">
+                        <form action="#" method="POST">
+                            <div class="holdsearch">
+                                <img src="images/magnifying-glass-solid-full.svg" alt="search_icon" class="search_icon">
+
+                                <input type="text" name="search" placeholder="Search products, brands and categories">
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <!-- search box ends here -->
+
+
+                    
+
+                <!-- mobilemenu search icon starts here -->
+                 <div class="mobsearchicon" onclick=displaysearchbox() id="mobsearchicon">
+                    
+                     <img src="images/magnifying-glass-solid-full.svg" alt="mobsearch_icon">
+                 </div>
+                 <!-- mobile menu search icon ends here -->
+
+
+            </div>
+
+            <div class="holditems">
+                <div class="items">
+                <a href="product.html"> <img src="images/item 1.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+                    <div class="detials">
+                        Home Refrigerator set<br>
+                        <span><b>N200,000</b></span>
+                        
+                        <div class="holdprogress">
+                            <label>60 items left</label>
+                            <progress id="file" value="70" max="800"> </progress>
+                        </div>   
+
+                        <nav>
+                            <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <a href="product.html"><img src="images/item 2.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+                    <div class="detials">
+                        Industrial Kettle<br>
+                        <span><b>N200,000</b></span>
+
+                        <div class="holdprogress">
+                            <label>54 items left</label>
+                            <progress id="file" value="300" max="800"> </progress>
+                        </div>   
+
+                        <nav>
+                            <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <a href=""><img src="images/item 3.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+                    <div class="detials">
+                        TINMO 18 inches <br>
+                        <span><b>N200,000</b></span>
+
+                        <div class="holdprogress">
+                            <label>34 items left</label>
+                            <progress id="file" value="500" max="800"> </progress>
+                        </div>
+                        
+                        <nav>
+                            <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="items">
+                    <a href="product.html"><img src="images/item 2.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+                    <div class="detials">
+                        Hikers Smart Tv<br>
+                        <span><b>N200,000</b></span>
+
+                        <div class="holdprogress">
+                            <label>70 items left</label>
+                            <progress id="file" value="15" max="800"> </progress>
+                        </div>
+                        
+                        <nav>
+                            <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                        </nav>
+                    </div>
+                </div>
+
+
+
+                <div class="items">
+                    <a href="product.html"><img src="images/item 1.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+                    <div class="detials">
+                        Home Refrigerator set<br>
+                        <span><b>N200,000</b></span>
+                        
+                        <div class="holdprogress">
+                            <label>60 items left</label>
+                            <progress id="file" value="70" max="800"> </progress>
+                        </div>
+                        
+                        <nav>
+                            <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <a href="product.html"><img src="images/item 2.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+                    <div class="detials">
+                        Industrial Kettle<br>
+                        <span><b>N200,000</b></span>
+
+                        <div class="holdprogress">
+                            <label>54 items left</label>
+                            <progress id="file" value="300" max="800"> </progress>
+                        </div>
+                        
+                        <nav>
+                            <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <a href="product.html"><img src="images/item 3.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+                    <div class="detials">
+                        TINMO 18 inches <br>
+                        <span><b>N200,000</b></span>
+
+                        <div class="holdprogress">
+                            <label>34 items left</label>
+                            <progress id="file" value="500" max="800"> </progress>
+                        </div>   
+
+                        <nav>
+                            <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="items">
+                    <a href="product.html"><img src="images/item 2.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+                    <div class="detials">
+                        Hikers Smart Tv<br>
+                        <span><b>N200,000</b></span>
+
+                        <div class="holdprogress">
+                            <label>70 items left</label>
+                            <progress id="file" value="15" max="800"> </progress>
+                        </div>
+                        
+                        <nav>
+                            <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                        </nav>
+                    </div>
+                </div>
+
+                
+            </div>  
+        </div>
+</div>
+<!-- flash sales div ends here -->
+
+
+
+<div class="holdwhatweoffer">
+    <div class="watweofferimg">
+        <img src="images/item 5.jpg" alt="" class="weofferimg">
+        <figure><a href="phones.html">Phones & Tablets</a></figure>
+    </div>
+
+    <div class="watweofferimg">
+        <img src="images/item 6.jpg" alt="" class="weofferimg">
+        <figure><a href="tv_gadets.html">TV & Audio</a></figure>
+    </div>
+
+
+    <div class="watweofferimg">
+        <img src="images/item 7.jpg" alt="" class="weofferimg">
+        <figure><a href="cosmetics_beauty">Beauty & Cosmetics</a></figure>
+    </div>
+
+
+    <div class="watweofferimg">
+        <img src="images/item 9.jpg" alt="" class="weofferimg">
+        <figure><a href="applliances.html">Appliances</a></figure>
+    </div>
+
+    <div class="watweofferimg">
+        <img src="images/item 6.jpg" alt="" class="weofferimg">
+        <figure><a href="gen_inverters.html">Generators & Inverters</a></figure>
+    </div>
+
+
+    <div class="watweofferimg">
+        <img src="images/item 7.jpg" alt="" class="weofferimg">
+        <figure>Cosmetics</figure>
+    </div>
+
+
+    <div class="watweofferimg">
+        <img src="images/item 9.jpg" alt="" class="weofferimg">
+        <figure>Generators & Inverters</figure>
+    </div>
+
+
+        <div class="watweofferimg">
+        <img src="images/item 5.jpg" alt="" class="weofferimg">
+        <figure>Phones & Tablets</figure>
+    </div>
+
+    <div class="watweofferimg">
+        <img src="images/item 6.jpg" alt="" class="weofferimg">
+        <figure>TV & Audio</figure>
+    </div>
+
+
+    <div class="watweofferimg">
+        <img src="images/item 7.jpg" alt="" class="weofferimg">
+        <figure>Beauty & Cosmetics</figure>
+    </div>
+</div>
+
+
+
+
+<!-- flash sales div starts here -->
+<div class="flashslaesdivv">
+    <div class="flashsaleslong">
+        Tablet Devices
+    </div>
+
+    <div class="holditems">
+        <div class="items">
+            <a href="product.html"><img src="images/item 1.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+            <div class="detials">
+                Home Refrigerator set<br>
+                <span><b>N200,000</b></span>
+                
+                <div class="holdprogress">
+                    <label>60 items left</label>
+                    <progress id="file" value="70" max="800"> </progress>
+                </div>   
+
+                 <nav>
+                    <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="items">
+            <a href="product.html"><img src="images/item 2.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+            <div class="detials">
+                Industrial Kettle<br>
+                <span><b>N200,000</b></span>
+
+                <div class="holdprogress">
+                    <label>54 items left</label>
+                    <progress id="file" value="300" max="800"> </progress>
+                </div>   
+
+                 <nav>
+                    <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="items">
+            <a href="product.html"><img src="images/item 3.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+            <div class="detials">
+                TINMO 18 inches <br>
+                <span><b>N200,000</b></span>
+
+                <div class="holdprogress">
+                    <label>34 items left</label>
+                    <progress id="file" value="500" max="800"> </progress>
+                </div>   
+
+                 <nav>
+                    <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="items">
+            <a href="product.html"><img src="images/item 2.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+            <div class="detials">
+                Hikers Smart Tv<br>
+                <span><b>N200,000</b></span>
+
+                <div class="holdprogress">
+                    <label>70 items left</label>
+                    <progress id="file" value="15" max="800"> </progress>
+                </div>   
+
+                 <nav>
+                    <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="items">
+            <a href="product.html"><img src="images/item 1.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+            <div class="detials">
+                Home Refrigerator set<br>
+                <span><b>N200,000</b></span>
+                
+                <div class="holdprogress">
+                    <label>60 items left</label>
+                    <progress id="file" value="70" max="800"> </progress>
+                </div>   
+
+                 <nav>
+                    <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="items">
+            <a href="product.html"><img src="images/item 2.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+            <div class="detials">
+                Industrial Kettle<br>
+                <span><b>N200,000</b></span>
+
+                <div class="holdprogress">
+                    <label>54 items left</label>
+                    <progress id="file" value="300" max="800"> </progress>
+                </div>   
+
+                 <nav>
+                    <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="items">
+            <a href="product.html"><img src="images/item 3.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+            <div class="detials">
+                TINMO 18 inches <br>
+                <span><b>N200,000</b></span>
+
+                <div class="holdprogress">
+                    <label>34 items left</label>
+                    <progress id="file" value="500" max="800"> </progress>
+                </div>   
+
+                 <nav>
+                    <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="items">
+            <a href="product.html"><img src="images/item 2.jpg" alt="referigeror-icon" class="itemimg"></a>
+
+            <div class="detials">
+                Hikers Smart Tv<br>
+                <span><b>N200,000</b></span>
+
+                <div class="holdprogress">
+                    <label>70 items left</label>
+                    <progress id="file" value="15" max="800"> </progress>
+                </div>   
+
+                 <nav>
+                    <a href="cart.html"><li  class="slide-down-in">Add to Cart</li></a>
+                </nav>
+            </div>
+        </div>
+
+        
+    </div>  
+</div>
+<!-- top sales div ends here -->
+
+
+
+
+
+<!-- footer starts here -->
+ <footer>
+    <div class="holdfooter">
+        <div class="carryfooter">
+            <p><span>Copyright</span> &copy; 2025 SHOPIT. All rights reserved.<br>
+                    Designed by <a href="https://www.linkedin.com/in/somtojah-praise-6ab57a26a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> The Jahboy</a></p>
+
+            
+            <div class="holdtermspoll">
+                <div class="termsss">
+                    TERMS OF USE
+                </div>
+
+                <div class="termsss">
+                    PRIVACY POLICY
+                </div>
+
+                <div class="termsss">
+                    COOKIES
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript code to display mobile menu starts here -->
+ 
+    <script>
+
+        function displaymobmenu(){
+            const carrymobilemenu=document.querySelector('.carrymobilemenu')
+            carrymobilemenu.style.display='block'
+            mobicons.style.display='none'
+            mobiconsx.style.display='inline-table'
+          }
+        
+        //   hidemobile menu div
+        function hidemobmenu(){
+            const carrymobilemenu=document.querySelector('.carrymobilemenu')
+            carrymobilemenu.style.display='none'
+            mobiconsx.style.display='none'
+            mobicons.style.display='inline-table'
+        }
+    </script>
+<!--javascript code to display mobile menu ends here  -->
+
+
+
+<!-- javascript code to display and hide search box mobile starts here -->
+ 
+    <script>
+
+        function displaysearchbox(){
+            const searchbox=document.querySelector('.searchbox')
+            searchbox.style.display='inline-table'
+            appearclicksearch.style.display='inline-table'
+            mobsearchicon.style.display='none'
+            flashdivp.style.display='none'
+          }
+        
+        //   hidemobile search box 
+        function hideearchbox(){
+            const searchbox=document.querySelector('.searchbox')
+            searchbox.style.display='none'
+            appearclicksearch.style.display='none'
+            mobsearchicon.style.display='inline-table'
+            flashdivp.style.display='inline-table'
+        }
+    </script>
+<!--javascript code to display and hide search box mobile  ends here  -->
+</body>
+</html>
