@@ -1,0 +1,2814 @@
+body{
+    background-color:rgb(233, 231, 231);
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.holdlogo{
+    height:100vh;
+    margin:0 auto;
+    background-color:white;
+    color:rgb(20, 212, 20);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:sans-serif;
+    width:30%;
+    animation:breathe 2s ease-in-out infinite;
+}
+
+.holdlogo img{
+    width:100%;
+}
+
+
+@keyframes breathe{
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.3);
+
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+
+.holdheadermenu{
+    margin:0 auto;
+    width:100%;
+    box-shadow:2px 0px 10px black;
+}
+
+.carryheadermeanu{
+    width:100%;
+    position:static;
+    position:fixed;
+    background-color:white;
+    z-index:20;
+}
+
+.logo{
+    width:10%;
+    display:inline-table;
+    vertical-align: top;
+    font-size: 20px;
+    color:black;
+    margin:0 auto;
+    text-align:center;
+    padding:12px;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search_icon{
+    width:5%;
+    position:relative;
+    top:5px;
+    left:9px;
+}
+
+.search_icon img{
+    width:100%;
+}
+
+.searchbox{
+    display:inline-table;
+    vertical-align: top;
+    width:30%;
+    margin:0 auto;
+}
+
+
+.searchbox input{
+    background-color:white;
+    font-size:14px;
+    display:inline-table;
+    vertical-align: top;
+    width:80%;
+    padding:4px;
+    padding-bottom:7px;
+    outline:none;
+    padding-left:15px;
+    border:none transparent;
+}
+
+.holdsearch{
+    background-color:white;
+    margin:0 auto;
+    border:1px solid gray;
+    border-radius:30px;
+    display:inline-table;
+    vertical-align: top;
+    width:100%;
+
+}
+
+.navigations{
+    display:inline-table;
+    vertical-align: top;
+    width:25%;
+    text-align:center;
+
+}
+
+.menus{
+    display:inline-table;
+    vertical-align: top;
+    width:50%;
+    text-align:right;
+}
+
+.menus a{
+    color:black;
+    text-decoration:none;
+}
+
+.menus li{
+    padding:12px;
+    font-size:15px;
+    width:auto;
+    display:inline-table;
+    vertical-align: top;
+    margin-right:90px;
+    text-align:center;
+    cursor:pointer;
+    padding-left:0;
+    padding-right:0;
+    padding-bottom:8px;
+    list-style-type: none;;
+}
+
+.menus li:hover{
+    border-bottom:3px solid orange;
+    font-weight: bold;
+}
+
+.hover_menu{
+    border-bottom:3px solid orange;
+    font-weight: bold;
+}
+.navigations li{
+    list-style-type: none;
+    font-size:15px;
+    display:inline-table;
+    vertical-align:top;
+    margin-right:10px;
+    color:rgb(87, 86, 86);
+    padding:12px;
+    padding-bottom:8px;
+    width:auto;
+    cursor:pointer;
+    
+}
+
+.navigations li:hover{
+    font-weight:bold;
+    border-bottom:3px solid orange
+}
+
+.navigations li:nth-child(3){
+    border:2px solid orange;
+    border-radius:8px;
+    text-align:center;
+    transition:all 2s;
+    cursor:pointer;
+    width:25%;
+    padding:7px;
+    margin:5px;
+}
+
+.navigations li:nth-child(3):hover{
+    background-color:orange;
+    color:white;
+}
+
+.carousel-container{
+    display:block;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    position:relative;
+    overflow:hidden;
+    max-height:500px;
+    position:relative;
+    display:flex;
+    margin:px auto;
+    overflow:hidden;
+    background-color:red;
+    
+}
+
+
+.carousel_slide{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    opacity:1;
+    height:100%;
+    object-fit: cover;
+}
+
+.carousel_slide.active{
+    opacity: 1;
+}
+
+.carousel_slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.prev-button, .next-button{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background-color:orange;
+    color:white;
+    padding:15px;
+    cursor:pointer;
+    overflow:hidden;
+    font-size:30px;
+    font-weight:bold;
+    z-index:10;
+}
+
+.prev-button{
+    left:10px;
+}
+
+.next-button{
+    right:10px;
+
+}
+
+.coverdiv img{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    object-fit: cover;
+    display:none;
+}
+
+.coverdiv img.active{
+    display:block;
+}
+
+
+.flashslaesdivv{
+    width:95%;
+    margin:0 auto;
+    background-color:white;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px gray;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.flashsaleslong{
+    width:98.4%;
+    padding:10px;
+    font-size:16px;
+    padding-left:20px;
+    padding-right:0;
+    background-color:orange;
+    color:white;
+    font-weight:bold;
+}
+
+.welcomeuser p{
+    display:inline-table;
+    vertical-align:top;
+    width:50%;
+    font-size:16px;
+    margin:0 auto;
+    padding:0;
+    margin-top:5px;
+    margin-left:35px;
+    font-weight:bold;
+    margin-bottom:0;
+    color:white;
+    margin-bottom:5px;
+}
+
+.welcomeuser span{
+    font-size:12px;
+}
+
+
+.userimg{
+    width:10%;
+    margin-top:6px;
+    margin-right:20px;
+    margin-left:20px;
+    display:inline-table;
+    vertical-align:top;
+
+}
+
+.userimg img{
+    width:100%;
+}
+
+.flashsaleslong p{
+    display:inline-table;
+    vertical-align:top;
+    width:50%;
+    font-size:16px;
+    padding:0;
+    margin-top:5px;
+    margin-bottom:0;
+}
+
+.mobsearchicon{
+    display:none;
+}
+.holditems{
+    width:100%;
+    margin:0 auto;
+    margin-top:0;
+}
+
+.items{
+    display:inline-table;
+    vertical-align: top;
+    margin-bottom:20px;
+    width:24.7%;
+    background-color:transparent;
+}
+
+.itemimg{
+    width:100%;
+    max-height: 215px;
+    cursor:pointer;
+    overflow: hidden;
+    
+}
+
+
+
+.itemimg img{
+    width:100%;
+    height:auto;
+}
+
+.detials{
+    margin:0 auto;
+    width:85%;
+    overflow:hidden;
+    font-size:15px;
+    line-height:27px;
+}
+
+.detials a{
+    text-decoration:none;
+}
+
+.detials span{
+    font-size:18px;
+}
+
+
+.detials li{
+    list-style-type: none;
+    padding:7px;
+    margin-top:10px;
+    width:95%;
+    color:white;
+    font-size:16px;
+    border-radius:0px;
+    text-align:center;
+    transition:all 3s;
+    background-color:orange;
+    cursor:pointer;
+    opacity:0;
+}
+
+.detials li:hover{
+    background: linear-gradient(to right, orange blue);
+
+}
+
+
+.detials:hover .slide-down-in{
+    animation:slideDown 1s ease-in-out;/* Animation length */
+    position:relative;
+    opacity:100;
+}
+
+@keyframes slideDown {
+  0% {
+    top:-50px;
+    opacity:0;
+  }
+  100% {
+    top:0;
+    opacity:1;
+  }
+}
+
+.holdprogress{
+    width:100%;
+    border:none transparent;
+}
+
+progress{
+    display:block;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    margin:0 auto;
+    padding:0;
+    width:100%;
+    background-color:rgb(202, 201, 201);
+    border-radius:30px;
+}
+
+progress::-webkit-progress-bar{
+    background-color:rgb(202, 201, 201);
+    overflow:hidden;
+}
+
+
+progress::-webkit-progress-value{
+    background-color:orange;
+}
+
+progress::-moz-progress-bar{
+     background-color:orange;
+}
+
+
+.holdwhatweoffer{
+    width: 95%;
+    margin:0 auto;
+    background-color:white;
+    border-radius:7px;
+}
+
+.watweofferimg{
+    display:inline-table;
+    vertical-align: top;
+    width:19.7%;
+    cursor:pointer; 
+    overflow:hidden;
+}
+
+.watweofferimg img{
+    transition:all 4s;
+    
+}
+
+
+.watweofferimg img:hover{
+    transform:scale(1.2);
+    
+}
+
+.watweofferimg a{
+    color:black;
+    text-decoration:none;
+}
+
+.watweofferimg figure{
+    font-size:15px;
+    text-align:center;
+}
+
+.watweofferimg figure:hover{
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+
+.weofferimg{
+    width:100%;
+    max-height:200px;
+    margin-bottom:0;
+}
+
+.weofferimg img{
+    width:100%;
+}
+
+
+.holdfooter{
+    margin:0 auto;
+    margin-top:30px;
+    width:100%;
+    background-color:rgb(41, 41, 41);
+    color:rgb(189, 186, 186);
+    text-align:center;
+}
+
+.carryfooter{
+    margin:0 auto;
+    width:100%;
+    text-align:center;
+    font-size:17px;
+    line-height:25px;
+    padding-top:30px;
+
+}
+
+.carryfooter a{
+    color:rgb(3, 99, 3);
+    text-decoration:none;
+}
+
+.carryfooter span{
+    color:rgb(207, 146, 33);
+}
+
+.holdtermspoll{
+    margin:0 auto;
+    margin-top:10px;
+    width:100%;
+    display:block;
+}
+
+.termsss{
+    display:inline-table;
+    vertical-align: top;
+    width:15%;
+    font-size:15px;
+    margin-bottom:30px;
+    
+}
+
+.termsss:nth-child(2){
+    border-right:2px solid gray;
+    border-left:2px solid gray;
+}
+
+.holdlongddiv{
+    margin:0 auto;
+    width:70%;
+    display:inline-table;
+    vertical-align:top;
+    padding-top:30px;
+}
+
+.carrylongdiv{
+    margin:0 auto;
+    box-shadow:2px 2px 4px black;
+    background-color:white;
+    width:93%;
+    border-radius:5px;
+    padding-bottom:20px;
+}
+
+.carrylongdiv h1{
+    font-size:20px;
+    padding:10px;
+    margin:0 auto;
+    padding-top:20px;
+}
+.holdsmallerdiv{
+    display:inline-table;
+    vertical-align:top;
+    width:27%;
+    padding-top:30px;
+}
+
+
+.carrysmallerdiv{
+    width:100%;
+    margin: 0 auto;
+    border-radius:5px;
+    background-color:white;
+    box-shadow:1px 1px 4px black;
+    padding-bottom:20px;
+    text-align:center;
+}
+
+.carrysmallerdiv h1{
+    font-size:16px;
+    padding:20px;
+    text-align:left;
+}
+
+.carrysmallerdiv figcaption{
+    text-align:left;
+    margin:0 auto;
+    width:95%;
+    font-size:14px;
+    margin-bottom:20px;
+    line-height:20px;
+}
+
+.carrysmallerdiv li{
+    list-style-type: none;
+    padding:7px;
+    text-align:center;
+    color:white;
+    border-radius:5px;
+    width:90%;
+    margin:0 auto;
+    background-color:orange;
+    margin-bottom:10px;
+}
+
+.specimagee{
+    width:95%;
+    margin-top:10px;
+}
+
+.specimagee img{
+    width:100%;
+}
+
+.product_img{
+    width:40%;
+    display:inline-table;
+    vertical-align: top;   
+}
+
+.product_img img{
+    width:100%;
+}
+
+.productheader{
+    display:inline-table;
+    vertical-align: top;
+    width:45%;
+    margin-bottom:5px;
+    margin-top:30px;
+    font-size:16px;
+}
+
+.productheader a{
+    text-decoration:none;
+    color:white;
+}
+
+.productheader span{
+    color:rgb(173, 172, 172);
+}
+
+.productheader li{
+    padding:10px;
+    width:100%;
+    text-align:center;
+    background-color:orange;
+    color:white;
+    border-radius:7px;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+.productdetailsss{
+    margin:0 auto;
+    width:95%;
+
+}
+
+.productdetailsss h1{
+    font-size:20px;
+}
+
+.productdetailsss p{
+    line-height: 25px;
+    font-size:15px;
+}
+
+.specboxes{
+    display:inline-table;
+    vertical-align:top;
+    width:45%;
+    border:0.5px solid gray;
+    margin-top:10px;
+    line-height:25px;
+    font-size:14px;
+    margin-right:10px;
+    padding:10px;
+    padding-top:0; 
+}
+
+.specboxes p{
+    font-size:14px;
+    border-bottom:0.5px solid gray;
+    margin-top:0;
+    padding:8px;
+}
+
+.specboxes li{
+    line-height:25px;
+    margin-left:0;
+}
+
+
+.specboxes ul{
+    margin-left:-10px;
+}
+
+.productdetailsss h2{
+    font-size:20px;
+    margin-top:20px;
+}
+
+
+.cart_img{
+    margin:10px;
+    width:25%;
+    display:inline-table;
+    vertical-align:top;
+    height:auto;
+    margin-top:10px;
+    margin-right:10px;
+}
+
+.cart_img img{
+    width:100%;
+}
+
+.orderbriefdetail{
+    display:inline-table;
+    vertical-align:top;
+    width:70%;
+    line-height:25px;
+    margin-top:10px;
+}
+.orderbriefdetail p{
+    font-size:15px;
+}
+
+.orderbriefdetail span{
+    color:silver;
+}
+
+.order_price{
+    background-color:red;
+    float:right;
+    margin-right:30px;
+    top:30px;
+}
+
+.orderbriefdetail li{
+    list-style-type:none;
+    margin-left:-10px;
+    line-height:25px;
+    font-size:14px;
+}
+
+
+.removeorder{
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:97%;
+}
+
+.removeorder p{
+    display:inline-table;
+    vertical-align:top;
+    width:80%;
+}
+
+.removeorder nav{
+    list-style-type:none;
+    display:inline-table;
+    vertical-align:top;
+    width:15%;
+    text-align:right;
+    padding:10px;
+    padding-bottom:0;
+}
+
+.removeorder li{
+    display:inline-table;
+    vertical-align:top;
+    padding:2px;
+    color:white;
+    border-radius:4px;
+    width:21%;
+    background-color:orange;
+    cursor:pointer;
+    font-size:22px;
+    text-align:center;
+    margin-right:20px;
+}
+
+
+.totaldeem li{
+    background-color:transparent;
+    color:black;
+    display:inline-table;
+    vertical-align:top;
+    width:40%;
+    text-align:left;
+    padding-left:0;
+}
+
+
+.totaldeem li:nth-child(2){
+    text-align:right;
+
+}
+.totaldeem{
+    margin-top:-20px;
+    padding-left:0;
+    margin-left:0px;
+    padding:0;
+    border-top:1px solid silver;
+}
+
+
+.carrysmallerdiv button{
+    background-color:orange;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    font-size:15px;
+    width:90%;
+    border:none transparent;
+}
+
+.prorcesing li{
+    list-style-type:none;
+    background-color:orange;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    font-size:15px;
+    margin-top:10px;
+    display:none;
+    width:85%;
+    border:none transparent;
+}
+
+
+.carrysmallerdiv select{
+    display:block;
+    width:90%;
+    margin:0 auto;
+    background-color:transparent;
+    border:1px solid gray;
+    border-radius:10px;
+    margin-bottom:40px;
+    cursor:pointer;
+    padding:8px;
+    font-size:14px;
+}
+
+.accountdet{
+    display:inline-table;
+    vertical-align:top;
+    width:40%;
+    text-align:left;
+    font-size:14px;
+    line-height:30px;
+    margin-bottom:20px;
+}
+
+.accountdet:nth-child(2){
+    text-align:right;
+}
+
+.carrysmallerdiv p{
+    color:orange;
+    font-weight:bold;
+    margin:0 auto;
+    margin-bottom:10px;
+    width:88%;
+    margin-top:0;
+}
+
+.carrysmallerdiv h2{
+    font-size:18px;
+    text-align:left;
+    margin-bottom:0;
+    padding:20px;
+    padding-bottom:7px;
+}
+
+.cartads_img{
+    width:95%;
+    margin:0 auto;
+    margin-top:7px;
+}
+
+
+
+.holdmobileheaders{
+    display:none;
+}
+
+
+.cartamount{
+    padding:4px;
+    font-size:11px;
+    font-weight:bold;
+    color:white;
+    border-radius:600px;
+    background-color: orange;
+    width:1%;
+    margin-top:-7px;
+    margin-left:13px;
+    position:absolute;
+}
+
+
+.holdmobilemenu{
+    display:none;
+}
+
+.holdflashsale{
+    width:100%;
+    margin:0 auto;
+    padding-top:40px;
+}
+
+.appearclicksearch{
+    display:none;
+}
+
+.welcomediv{
+    padding-top:50px;
+    margin:0 auto;
+    width:100%;
+}
+
+.welcomeunderdiv{
+    width:100%;
+    margin:0 auto;
+
+}
+.welcomeuser{
+    width:100%;
+    margin:0 auto;
+    background-color:orange;
+}
+
+.holduserdivvv{
+    width:100%;
+    margin:0 auto;
+    height:100vh;
+    background-color:white;
+}
+
+.carryuserdivvv{
+    margin:0 auto;
+    width:100%;
+}
+
+.carryuserdivvv span{
+    text-decoration:double line-through;
+}
+.carryuserdivvv p{
+    display:inline-table;
+    margin-top:11px;
+    vertical-align:top;
+    color:rgb(65, 64, 64);
+}
+.walletimg{
+    width:2%;
+    display:inline-table;
+    margin-left:30.3px;
+    margin-top:7px;
+    vertical-align:auto
+}
+
+.walletimg img{
+    width:100%;
+}
+
+.carrymenususerunder{
+    background-color:rgba(233, 228, 228, 0.897);
+    opacity:70%;
+    margin:0 auto;
+    width:100%;
+}
+
+.carrymenususerunder p{
+    width:40%;
+    margin:0 auto;
+    padding:10px;
+    font-size:15px;
+    color:black;
+    opacity:1000%;
+    padding-left:32px;
+}
+
+.carryuserdivvv nav{
+    width:100%;
+    margin:0 auto;
+}
+
+.carryuserdivvv li{
+    list-style-type: none;
+    display:inline-table;
+    vertical-align:top;
+    font-size:16px;
+    width:90%;
+    margin-bottom:3px;
+    padding:8px;
+    cursor:pointer;
+    padding-left:30px;
+    border-bottom:0.8px solid rgb(233, 228, 228);
+}
+
+.carryuserdivvv a{
+    text-decoration:none;
+    color:black;
+}
+.carryuserdivvv li:hover{
+    font-weight:bold;
+}
+.user_iconss{
+    width:2%;
+    margin-top:-3px;
+    vertical-align:top;
+    display:inline-table;
+    margin-right:8px;
+}
+
+.user_iconss img{
+    width:100%;
+}
+
+.arrow_leftt{
+    width:1.6%;
+    vertical-align:top;
+    display:inline-table;
+    right:0;
+    float:right;
+}
+
+.arrow_leftt img{
+    width:100%;
+}
+
+
+.logmeout{
+    width: 100%;
+    margin:0 auto;
+    background-color:transparent;
+}
+
+.logmeout li{
+    list-style-type: none;
+    margin:0 auto;
+    width:96%;
+    margin-top:15px;
+    color:red;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+
+.holdcontactus{
+    width:100%;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    margin:0 auto;
+    position:relative;
+    padding-top:30px;
+
+}
+
+.carrycontactusdivvv{
+    width:90%;
+    margin:0 auto;
+    position:flex;
+    margin-bottom:30px;
+}
+.contactusimg{
+    display:inline-table;
+    vertical-align: top;
+    width:52%;
+    margin-right:20px;
+    overflow:hidden;
+    bottom:-100px;
+    position:relative;
+}
+
+.contactusimg p{
+    line-height:25px;
+}
+
+.contactusimg h1{
+    font-size:20px;
+}
+
+.contactusform{
+    display:inline-table;
+    vertical-align:top;
+    width:40%;
+    text-align:center;
+    margin: 0 auto;
+    background-color:white;
+    box-shadow:3px 3px 10px black;
+    margin-top:70px;
+    padding-bottom:50px;
+}
+
+
+.contactusform input{
+    width:84%;
+    padding:15px;
+    outline:none;
+    border-radius:8px;
+    margin-bottom:10px;
+    background-color: rgb(228, 225, 225);
+    border:0.2px solid orange;
+    color:black;
+    font-size:16px;
+    padding-left:20px;
+}
+
+.contactusform textarea{
+    width:84%;
+    resize:none;
+    font-size:16px;
+    padding:15px;
+    background-color:rgb(228, 225, 225);
+    color:black;
+    padding-left:20px;
+    border-radius:8px;
+    margin-bottom:10px;
+    outline:none;
+    padding-bottom:30px;
+    border:0.2px solid orange;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contactusform button{
+    padding:15px;
+    background-color:orange;
+    border-radius:8px;
+    text-align:center;
+    font-size:18px;
+    color:white;
+    margin:0 auto;
+    width:90%;
+    margin-top:8px;
+    border:none transparent;
+}
+.contactusform h1{
+    font-size:23px;
+    padding-top:25px;
+    padding-bottom:0;
+    color:rgb(61, 59, 59);
+    margin-bottom:10px;
+}
+
+.contactusform p{
+    margin:0;
+    font-size:16px;
+    width:100%;
+    color:rgb(75, 74, 74);
+    margin-bottom:20px;
+    padding-top:40px;
+}
+
+.contactmeimg{
+    width:100%;
+    display:block;
+    overflow:hidden;
+    height:auto;
+    filter: brightness(75%);
+}
+
+.contactmeimg img{
+    width:100%;
+}
+
+
+.socialhandes{
+    margin:0 auto;
+    width:100%;
+    text-align:center;
+    align-items:center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footerpolicy{
+    margin:0 auto;
+    width:100%;
+    bottom:0;
+    position:relative;
+
+}
+
+.footerpolicy li{
+    display:inline-table;
+    list-style-type:none;
+    vertical-align: top;
+    width:25%;
+    cursor:pointer;
+    margin-top:50px;
+    font-size:14px;
+    color:rgb(48, 48, 48);
+    border-right:0.3px solid rgb(105, 104, 104);
+}
+
+.footerpolicy a{
+    text-decoration:none;
+    color:rgb(48, 48, 48);
+}
+.footerpolicy li:nth-child(3){
+    border-right:none transparent;
+}
+
+.holdaboutusdiv{
+    margin:0 auto;
+    width:100%;
+    padding-top:40px;
+}
+
+.carryaboutusdiv{
+    margin:0 auto;
+    width:100%;
+}
+
+.carrycoverimg{
+    width:100%;
+    max-height:300px;
+    overflow:hidden;
+    margin:0 auto;
+}
+
+
+.aboutusimg{
+    height:auto;
+    margin: 0 auto;
+    filter:brightness(50%);
+    width:100%;
+}
+
+.aboutusimg img{
+    width:100%;
+}
+
+.aboutustext{
+    position:absolute;
+    width:100%;
+    margin:0 aut0;
+    z-index:2;
+    align-items:center;
+    align-content:center;
+    justify-content: center;
+    justify-items:center;
+    color:white;
+    margin:0 auto;
+    text-align:center;
+    height:40vh;
+}
+
+.aboutustext h1{
+    font-size:23px;
+    color:orange;
+    text-shadow: 2px 2px 10px black;
+    margin-bottom:9px;
+}
+
+.aboutustext p{
+    width:50%;
+    line-height: 25px;;
+    margin:0 auto;
+}
+
+.explainaboutus{
+    width:100%;
+    margin:0 auto;
+    padding-top:30px;
+    background-color:white;
+}
+
+.writeupaboutwe{
+    width:50%;
+    display:inline-table;
+    vertical-align:top;
+    margin-right:10px;
+    line-height:28px;
+    margin:0 auto;
+    padding:30px;
+}
+
+.writeupaboutwe h1{
+    font-size:20px;
+    width:100%;
+}
+
+.writeupaboutwe p{
+    font-size:15px;
+}
+
+.aboututceocc{
+    width:28%;
+    display:inline-table;
+    vertical-align:top;
+    margin-left:40px;
+}
+
+.aboututceocc img{
+    width:100%;
+}
+
+.holdviddiv{
+    width:100%;
+    margin:0 auto;
+    margin-top:30px;
+}
+.holdviddiv h1{
+    font-size:20px;
+    text-align:center;
+    width:100%;
+    margin:0 auto;
+}
+
+.holdviddiv p{
+    font-size:15px;
+    line-height:28px;
+    text-align:center;
+    margin:0 auto;
+    width:65%;
+}
+
+.videodivhere{
+    width:80%;
+    margin:0 auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align:center;
+    margin-top:30px;
+}
+
+.videod{
+    border-radius:20px;
+    background-color:white;
+    border:0.2px solid silver;
+    border-radius:20px;
+    width:100%;
+    height:auto;
+}
+
+.ourpoints{
+    width:99%;
+    margin:0 auto;
+    background-color:rgb(245, 243, 243);
+    margin-top:30px;
+    text-align:center;
+    align-items:center;
+    align-content: center;
+    justify-content: center;
+    justify-items:center;
+    border:0.8px solid silver;
+    border-left:none transparent;
+    border-right:none transparent;
+}
+
+.points{
+    display:inline-table;
+    vertical-align:top;
+    width:20%;
+    padding:20px;
+}
+
+.points h1{
+    font-size:28px;
+    color:orange;
+    text-shadow:1px 1px 3px silver;
+}
+
+.points span{
+    font-size:14px;
+}
+
+.holdourteam{
+    width:100%;
+    margin:0 auto;
+    margin-top:60px;
+    text-align:center;
+    background-color:rgb(236, 174, 57);
+    padding-bottom:70px;
+}
+
+.holdourteam h1{
+    font-size:20px;
+    text-align:center;
+    margin-bottom:8px;
+    padding-top:40px;
+}
+
+.holdourteam p{
+    text-align:center;
+    font-size:15px;
+    margin:0 auto;
+    width:45%;
+    line-height:25px;
+}
+
+
+.carryteampictures{
+    display:inline-table;
+    vertical-align:top;
+    margin:0 auto;
+    margin-top:40px;
+    width:30%;
+    margin-right:20px;
+    text-align:center;
+    border-radius:0px 30px 0px 30px;  
+    border:0.8px solid white; 
+    background-color:rgb(245, 183, 68);
+}
+
+.carryteampictures:hover{
+    border:1.8px solid white;
+}
+.carryteampictures:nth-child(4){
+    box-shadow:5px 5px 30px black;
+    border:2px solid white;
+    border-radius:0;
+
+}
+
+.team_images{
+    width:100%;
+    margin:0 auto;
+    padding:0;
+}
+
+.weareoustanding{
+    margin:0 auto;
+    width:100%;
+    margin-top:50px;
+}
+
+.weareoustanding h1{
+    font-size:20px;
+    text-align:center;
+    margin:0 auto;
+    width:100%;
+}
+
+.weareoustanding p{
+    font-size:15px;
+    text-align:center;
+    width:40%;
+    margin:0 auto;
+}
+
+.ostandingwrtieup{
+    display:inline-table;
+    vertical-align:top;
+    width:60%;
+    margin:0 auto;
+    margin-top:30px;
+}
+
+.ostandingwrtieup p{
+    line-height:25px;
+    font-size:15px;
+    text-align:left;
+    width:40%;
+}
+
+.holdreviewdiv{
+    width:100%;
+    margin:0 auto;
+    background-color:white;
+    padding-top:50px;
+    margin-top:40px;
+    overflow:scroll;
+    overflow-y: hidden;
+}
+
+.singlerevdiv{
+    width: 28%;
+    background-color:blue;
+    margin:0 auto;
+    background-color:transparent;
+    border:0.8px solid silver;
+    padding:20px;
+    margin-bottom:30px;
+    display:inline-table;
+    vertical-align: top;
+    border-radius:15px;
+    margin-right:20px;
+    margin-left:10px;
+}
+.holdimgname{
+    display:inline-table;
+    vertical-align:top;
+    width:50%;
+}
+
+.carryprofpic{
+    width:15%;
+    display:inline-table;
+    vertical-align:top;
+    height:auto;
+    border-radius:500px;
+    overflow:hidden;
+    margin-right:10px;
+}
+.user_pof_img{
+    width:100%;
+    border-radius:500px;
+    overflow:hidden;
+}
+
+.user_pof_img img{
+    width:100%;
+}
+
+.carryreviewdiv{
+    width:200%;
+    margin:0 auto;
+    overflow:scroll;
+    overflow-y: hidden;
+}
+
+.nameandemail{
+    display:inline-table;
+    vertical-align:top;
+    margin-top:2px;
+    width:70%;
+
+}
+.holdimgname p{
+    width:100%;
+    margin-bottom:0;
+    font-size:18px;
+}
+
+.holdimgname span{
+    width:20%;
+    font-size:12px;
+}
+
+.holdstars{
+    display:inline-table;
+    vertical-align:top;
+    width:40%;
+    right:0;
+    text-align:right;
+    padding:30px;
+}
+
+
+.singlerevdiv p{
+    font-size:15px;
+    line-height:28px;
+    width:100%;
+    margin-top:0px;
+}
+
+
+.marquee{
+    width:80%;
+    height:100px;
+    overflow:hidden;
+    margin:0 auto;
+    position:static;;
+    border-left:0.8px solid silver;
+    border-right:0.8px solid silver;
+    padding-bottom:20px;
+    background-color:white;
+    margin-top:10px;
+}
+
+.marquee img{
+    position:relative;
+    width:13%;
+    margin-left:30px;
+    animation: marquee 40s linear infinite;
+}
+
+.holdmarquee{
+    margin:0 auto;
+    width:99%;
+    padding-bottom:70px;
+    border:1px solid silver;
+    border-left:none transparent;
+    border-right:none transparent;
+    background-color:white;
+}
+
+.holdmarquee h1{
+    font-size:20px;
+    text-align:center;
+    padding-top:40px;
+}
+
+.holdmarquee p{
+    text-align:center;
+    width:55%;
+    margin:0 auto;
+    line-height:25px;
+    margin-bottom:5px;
+    font-size:15px;
+}
+
+
+.faqquestions{
+    margin:0 auto;
+    width:100%;
+    padding-top:40px;
+}
+
+.faqquestions h1{
+    text-align:center;
+    font-size:20px;
+    width:100%;
+}
+
+.faqquestions p{
+    text-align:center;
+    font-size:15px;
+    width:50%;
+    margin:0 auto;
+}
+/* marquee key frame effect starts here */
+@keyframes marquee{
+    0%{
+        left:100%;
+
+    }
+
+    100%{
+        left:-100%;
+    }
+}
+/* marqee key frame effect ends here */
+
+
+
+.faqfirstdiv{
+    display:inline-table;
+    vertical-align:top;
+    width:30%;
+    padding:30px;
+    margin-top:20px;
+}
+
+.faqfirstdiv p{
+    text-align:left;
+    font-size:15px;
+    width:100%;
+    line-height:25px;
+
+}
+
+
+.holdfaquestions{
+    display:inline-table;
+    vertical-align:top;
+    width:60%;
+    margin-top:40px;
+}
+
+.questionsss{
+    width:100%;
+    margin:0 auto;
+    padding:10px;
+    text-align:left;
+    background-color:rgb(248, 243, 243);
+    box-shadow:2px 2px 10px gray;
+    margin-bottom:10px;
+}
+
+
+.questionsss p{
+    text-align:left;
+    font-size:15px;
+    line-height:25px;
+    width:60%;
+    display:inline-table;
+    vertical-align:top;
+}
+
+.answers{
+    border:none transparent;
+    width:100%;
+    margin:0 auto;
+    padding:10px;
+    background-color:rgb(231, 229, 229);
+    margin-bottom:10px;
+    margin-top:-7px;
+    display:none;
+    
+}
+
+.answers p{
+    text-align:left;
+    line-height:25px;
+    font-size:15px;
+    width:100%;
+}
+
+.faqfirstdiv li{
+    list-style-type: none;
+    padding:8px;
+    width:25%;
+    margin-top:10px;
+    cursor:pointer;
+    text-align:center;
+    font-size:14px;
+    color:white;
+    background-color:orange;
+}
+.arrow_dwn{
+    width:2%;
+    display:inline-table;
+    vertical-align: top;
+    right:0;
+    float:right;
+    margin-top:10px;
+    opacity:60%;
+    margin-right:20px;
+}
+
+.arrow_dwn img{
+    width:100%;
+}
+
+
+.arrow_up{
+    width:2%;
+    display:inline-table;
+    vertical-align: top;
+    right:0;
+    float:right;
+    margin-top:10px;
+    opacity:60%;
+    margin-right:20px;
+    display:none;
+}
+
+.arrow_up img{
+    width:100%;
+}
+
+
+.bottommobmenu{
+    bottom:0;
+    width:100%;
+    background-color:white;
+    position:absolute;
+    z-index:10;
+    position:fixed;
+    display:none;
+}
+
+.carrybottommob{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.menumobmen{
+    display:inline-table;
+    vertical-align:top;
+    width:23%;
+    text-align:center;
+}
+
+.menumobmen figcaption{
+    font-size:12px;
+    color:black;
+    text-align:center;
+}
+
+.mobmenuicon{
+    width:25%;
+}
+
+.menumobmen a{
+    text-decoration:none;
+}
+
+
+.mobmenuicon img{
+    width:100%;
+}
+
+
+.holdhelpdiv{
+    position:absolute;
+    bottom:80px;
+    right:0;
+    width:10%;
+    z-index:3;
+    position:fixed;
+    display:none;
+    margin-right:30px;
+}
+.helpicon{
+    width:80%;
+    padding:8px;
+    cursor:pointer;
+    border-radius:500px;
+    background-color:white;
+}
+
+.helpicon img{
+    width:100%;
+}
+
+.emptycart{
+    margin:0 auto;
+    padding-top:60px;
+    width:100%;
+}
+
+.emptycart a{
+    text-decoration: none;
+    color:white;
+}
+
+.emptycart li{
+    list-style-type: none;
+    padding:10px;
+    width:50%;
+    text-align:center;
+    color:white;
+    background-color:orange;
+    border-radius:8px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.emptycart h1{
+    font-size:20px;
+    text-align:center;
+    margin:0 auto;
+    width:100%;
+}
+
+.emptycart p{
+    margin:0 auto;
+    text-align:center;
+    font-size:15px;
+    line-height:25px;
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive adjustment starts here */
+@media(max-width:1280px){
+    .items{
+        width:23.9%;
+        margin-right:10px;
+    }
+    .items:nth-child(1){
+        margin-left:5px;
+    }
+
+    .items:nth-child(4){
+        margin-right:0;
+    }
+
+    .watweofferimg{
+        width:33%;
+    }
+
+    .aboutustext{
+        padding-top:10px;
+        height:20vh;
+    }
+}
+
+@media(max-width:1156px){
+    .items{
+        margin-right:6px;
+    }
+
+
+   
+}
+@media(max-width:1024px){
+
+    .contactusimg{
+        width:100%;
+        margin-top:0;
+        bottom:0;
+    }
+
+    .contactusform{
+        margin:0 auto;
+        width:70%;
+        right:0;
+        margin-left:0;
+        display:block;
+    }
+
+    .aboutustext p{
+        width:60%;
+    }
+    .holdhelpdiv{
+        display:block;
+        bottom:120px;
+    }
+
+    .helpicon{
+        width:60%;
+        box-shadow:3px 3px 20px black;
+    }
+    .bottommobmenu{
+        display:block;
+
+    }
+
+    .carrybottommob{
+        display:block;
+        margin:0 auto;
+        text-align:center;
+    }
+
+    .menumobmen{
+        display:inline-table;
+        vertical-align:top;
+        width:23%;
+        margin:0 auto;
+        text-align:center;
+    }
+
+    .menumobmen figcaption{
+        font-size:12px;
+        color:black;
+        text-align:center;
+    }
+
+    .mobmenuicon{
+        width:15%;
+    }
+
+    .holdmobilemenu{
+        display:block;
+        position:absolute;
+        width:40%;
+        left:0;
+        margin-top:47px;
+        margin:0 aut0;
+        z-index:5;
+    }
+
+    .carrymobilemenu{
+        width:100%;
+        background-color:rgb(160, 156, 156);
+        position:fixed;
+        color:white;
+        border-right:2px solid silver;
+        padding-bottom:5px;
+        opacity:60px;
+        margin-top:-100px;
+        animation:slide-down 1.5s forwards;
+        display:none;
+        z-index:0;
+    }
+
+    .carrymobilemenu a{
+        color:white;
+        text-decoration:none;
+    }
+
+    
+    @keyframes slide-down{
+    from{
+        margin-top:-100px;
+    }
+
+    to{
+        margin-top:0;
+    }
+}
+
+    .carrymobilemenu li{
+        list-style-type:none;
+        padding:7px;
+        font-size:14px;
+        text-align:left;
+        margin-bottom:2px;
+        border-radius:10px;
+        border-bottom:1px solid silver;
+        cursor:pointer;
+        width:95%;
+        padding:10px;
+        padding-left:20px;
+    }
+
+    .carrymobilemenu li:hover{
+        background-color:orange;
+
+    }
+    .holdmobileheaders{
+        display:inline-table;
+        width:40%;
+        float:right;
+        text-align: right;
+        margin-right:20px;
+        margin-top:6px;
+    }
+
+    .mobicons{
+        width:8%;
+        display:inline-table;
+        vertical-align: top;
+        margin-right:30px;
+        cursor: pointer;;
+        padding:0;
+        text-align:center;
+    }
+
+    .mobicons:nth-child(2){
+        height:auto;
+        width:8%;
+        overflow:hidden;
+        border-radius:500px;
+    }
+
+    .mobiconsx{
+        display:none;
+        width:8%;
+        display:inline-table;
+        vertical-align:top;
+        padding:0;
+        text-align:center;
+        cursor:pointer;
+        display:none;
+        margin-right:30px;
+    }
+
+    .mobiconsx img{
+        width:100%;
+    }
+
+    .mobicons img{
+        width:100%;
+    }
+
+
+    .navigations{
+        display:none;
+    }
+    .menus{
+        display:none;
+    }
+
+    .navigations{
+        width:80%;
+        text-align:right;
+    }
+
+
+    .flashsaleslong{
+        width:98%;
+    }
+
+    .carryfooter{
+        font-size:16px;
+        color:rgb(156, 154, 154);
+    }
+
+    .termsss{
+        font-size:14px;
+    }
+
+    .termsss:nth-child(3){
+        width:10%;
+    }
+
+    .holdimgname{
+        width:50%;
+    }
+
+    .holdstars{
+        width:30%;
+        padding-top:10px;
+        padding-bottom:0;
+    }
+}
+
+@media(max-width:920px){
+
+    .holdmarquee p{
+        width:70%;
+    }
+
+    .faqquestions p{
+        width:70%;
+    }
+
+    .faqfirstdiv{
+        width:95%;
+    }
+
+    .holdfaquestions{
+        width:95%;
+        margin-left:15px;
+        margin-top:0;
+    }
+
+
+    .marqueeimg{
+        width:20%;
+    }
+
+    .marquee{
+        height:50px;
+    }
+    .answers{
+        width:97%;
+        margin:0;
+    }
+
+    .answers p{
+        width:100%;
+    }
+
+    .questionsss{
+        width:97%;
+        margin:0;
+        margin-bottom:10px;
+    }
+    .faqfirstdiv p{
+        width:100%;
+    }
+    .items{
+        width:48%;
+    }
+
+    .watweofferimg{
+        width:32.8%;
+    }
+
+    .writeupaboutwe{
+        width:95%;
+        display:block;
+        margin-top:0;
+        padding-top:0;
+    }
+
+    .aboututceocc{
+        margin:0 auto;
+        width:50%;
+        text-align:center;
+        display:block;
+        margin-left:0;
+        margin:0 auto;
+        margin-top:0;
+        padding-top:0;
+    }
+
+    .termsss{
+        width:30%;
+    }
+
+    .carrymobilemenu li{
+        padding-left:10px;
+    }
+
+    .aboutustext p{
+        width:70%;
+    }
+
+    .holdviddiv p{
+        width:85%;
+    }
+
+    .points{
+        width:17%;
+    }
+
+    .holdourteam p{
+        width:90%;
+    }
+
+    .carryteampictures{
+        width:25%;
+        padding-bottom:10px;
+    }
+
+    .carryteampictures figcaption{
+        font-size:12px;
+    }
+
+    .singlerevdiv{
+        width:30%;
+    }
+
+    .carryreviewdiv{
+        width:300%;
+    }
+}
+
+@media(max-width:768px){
+    .contactusform{
+        width:85%;
+    }
+
+    .contactusform button{
+        padding:10px;
+        margin-bottom:20px;
+    }
+    .carryteampictures{
+        width:27%;
+    }
+    .orderbriefdetail{
+        width:68%;
+    }
+
+    .holdmobileheaders{
+        margin-top:8px;
+        margin-right:10px;
+    }
+
+    .mobicons{
+        width:9%;
+    }
+
+    .carryreviewdiv{
+        width:350%;
+    }
+    .writeupaboutwe{
+        width:95%;
+        padding:0;
+        margin:0 auto;
+    }
+    .writeupaboutwe p{
+        font-size:15px;
+    }
+
+    .aboututceocc{
+        width:40%;
+    }
+}
+@media(max-width:640px){
+    .holdmarquee p{
+        font-size:14px;
+        width:90%;
+    }
+
+
+    .faqquestions p{
+        font-size:14px;
+        width:90%;
+    }
+
+    .faqfirstdiv{
+        margin-left: 0px;
+        width:90%;
+        margin:0 auto;
+        padding-left:10px;
+    }
+
+    .holdfaquestions{
+        margin-left:8px;
+        width:95%;
+    }
+
+    .faqfirstdiv p{
+        width:100%;
+    }
+    .marquee{
+        height: 20px;
+    }
+
+    .marqueeimg{
+        width:40%
+    }
+    .singlerevdiv{
+        width:25%;
+    }
+    .weareoustanding h1{
+        width:100%;
+    }
+
+    .weareoustanding p{
+        width:80%;
+    }
+
+    .carryprofpic{
+        width:17%;
+    }
+
+    .singlerevdiv p{
+        font-size:14px;
+    }
+
+    .nameandemail p{
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+
+    .nameandemail{
+        line-height:0;
+    }
+
+    .holdstars{
+        margin-right:10px;
+        width:30%;
+    }
+
+    .nameandemail span{
+       margin-top:-20px;
+    }
+    .ostandingwrtieup{
+        width:98%;
+    }
+    .points{
+        width:15%;
+    }
+    .writeupaboutwe p{
+        font-size:14px;
+        width:97%;
+    }
+
+    .mobsearchicon{
+        display:inline-table;
+        vertical-align:top;
+        width:4%;
+        cursor:pointer;
+        right:0;
+    }
+
+    .carryteampictures{
+        width:50%;
+        margin:0 auto;
+        display:block;
+        margin-bottom:20px;
+        margin-top:20px;
+    }
+
+    .writeupaboutwe h1{
+        font-size:18px;
+    }
+    .aboutustext h1{
+        font-size:21px;
+    }
+    .aboutustext p{
+        width:75%;
+        font-size:15px;
+    }
+
+    .aboutustext{
+        height:14vh;
+    }
+    .flashsaleslong p{
+        width:90%;
+    }
+
+    .welcomeuser p{
+        width:60%;
+        margin:0;
+        padding:10px;
+    }
+    .mobsearchicon img{
+        width:100%;
+    }
+
+    .appearclicksearch{
+        display:inline-table;
+        left:0;
+        width:4.8%;
+        vertical-align:top;
+        margin-right:8px;
+        display:none;
+    }
+
+    .appearclicksearch img{
+        width:100%;
+    }
+    .searchbox{
+       width:90%;
+       display:inline-table;
+       vertical-align:top;
+       display:none;
+    }
+
+    
+
+
+    .search_icon{
+        width:5%;
+    }
+    .holdmobileheaders{
+        margin-top:10px;
+    }
+
+    .mobicons{
+        width:10%;
+    }
+    .holdlongddiv{
+        display:block;
+        width:100%;
+
+    }
+
+    .specboxes{
+        display:block;
+        width:90%;
+    }
+
+    .holdsmallerdiv{
+        display:block;
+        width:95%;
+        margin:0 auto;
+    }
+    .watweofferimg{
+        width:32.5%;
+    }
+    .items{
+        margin-right:3px;
+    }
+    .holdlogo{
+        width:70%;
+    }
+
+    .navigations{
+        display:none;
+    }
+
+    .flashsaleslong{
+        width:96.8%;
+    }
+
+    .itemsss{
+        width:25%;
+    }
+}
+
+@media(max-width:500px){
+
+    .contactusform{
+        width:97%;
+    }
+
+    .contactusimg p{
+        font-size:14px;
+    }
+    .arrow_dwn{
+        width:3%;
+        margin-right:6px;
+    }
+
+    .arrow_up{
+        width:3%;
+        margin-right:6px;
+    }
+    .singlerevdiv{
+        width:25%;
+    }
+
+    .carryreviewdiv{
+        width:450%;
+    }
+    .points{
+        width:15%;
+        padding:8px;
+    }
+
+    
+    .holdviddiv h1{
+        font-size:18px;
+        width:70%;
+    }
+
+    .holdviddiv p{
+        font-size:14px;
+    }
+
+    .videodivhere{
+        width:90%;
+    }
+
+    .holdviddiv{
+        width:100%;
+    }
+
+    .aboututceocc{
+        width:70%;
+    }
+    .emptycart h1{
+        font-size:18px;
+    }
+
+    .emptycart p{
+        font-size:14px;
+    }
+
+    .emptycart li{
+        width:87%;
+    }
+    .helpicon{
+        width:90%;
+        padding:5px;
+    }
+
+    .holdhelpdiv{
+        bottom:70px;
+    }
+
+    .aboutustext p{
+        width:80%;
+        font-size:13px;
+        margin-top:0;
+        line-height: 22px;
+    }
+
+    .aboutustext h1{
+        margin-bottom:0;
+        font-size:19px;
+    }
+
+    .aboutustext{
+        height:12vh;
+    }
+    .menumobmen{
+        display:inline-table;
+        vertical-align:top;
+        width:23%;
+        text-align:center;
+    }
+
+    .menumobmen figcaption{
+        font-size:12px;
+        color:black;
+        text-align:center;
+    }
+
+    .mobmenuicon{
+        width:25%;
+    }
+
+    .searchbox input{
+        padding-top:5px;
+    }
+       .search_icon{
+        width:5%;
+     }
+    .appearclicksearch{
+        width:6%;
+        margin-top:2px;
+        margin-left:0px;
+        margin-left:-8px;
+    }
+    .mobsearchicon{
+        width:5%;
+    }
+
+    .holdmobileheaders{
+        margin-right:0;
+        margin-top:13px;
+    }
+
+    .mobicons{
+        width:13%;
+    }
+
+    .mobicons:nth-child(3){
+        width:14%;
+    }
+
+    .mobiconsx{
+        width:14%;
+    }
+    .cart_img{
+       width:20%;
+    }
+
+    .orderbriefdetail{
+        margin-top:0;
+    }
+
+    .orderbriefdetail p{
+        margin-top:3px;
+    }
+    .orderbriefdetail span{
+       display:none;
+    }
+
+    .orderbriefdetail ul{
+        display:none;
+    }
+    .removeorder p{
+        width:60%;
+    }
+
+    .removeorder nav{
+        width:30%;
+    }
+    .watweofferimg{
+        width:49%;
+    }
+
+    .watweofferimg figure{
+        font-size:13px;
+        margin-top:10px;
+    }
+    .flashsaleslong{
+        width:96%;
+    }
+
+    .detials{
+        font-size:14px;
+    }
+
+    .detials span{
+        font-size:14px;
+    }
+
+    .holdprogress label{
+        font-size:12px;
+    }
+}
+
+@media(max-width:410px){
+    .contactusform p{
+        width:70%;
+        margin:0 auto;
+        margin-bottom:20px;
+
+    }
+
+    .contactusform input{
+        padding:7px;
+        padding-left:20px;
+    }
+
+    .contactusform textarea{
+        padding:7px;
+        padding-left:20px;
+        width:81%;
+    }
+
+    .contactusform button{
+        padding:7px;
+    }
+    .holdfaquestions{
+        margin-left:5px;
+        width:90%;
+    }
+
+    .arrow_dwn{
+        width:4%;
+    }
+
+    .arrow_up{
+        width:4%;
+    }
+    .singlerevdiv{
+        width:28%;
+    }
+
+    .carryreviewdiv{
+        width:500%;
+    }
+    .carryteampictures{
+        width:70%;
+    }
+    .helpicon{
+        width:95%;
+        padding:4px;
+    }
+    .search_icon{
+        width:5%;
+    }
+
+    .holdviddiv h1{
+        width:90%;
+    }
+    .aboutustext p{
+        font-size:12px;
+        width:90%;
+    }
+
+    .aboutustext h1{
+        font-size:16px;
+    }
+
+    .aboutustext{
+        height:10vh;
+    }
+    
+    .searchbox input{
+        font-size:13px;
+    }
+    
+    .mobsearchicon{
+        width:6%;
+    }
+    .flashsaleslong{
+        width:95%;
+    }
+    .items{
+        width:47%;
+    }
+
+    .holdmobileheaders{
+        width:50%;
+    }
+    .writeupaboutwe p{
+        width:98%;
+    }
+
+}
+
+
+@media(max-width:340px){
+    .holdmobileheaders{
+        width:60%;
+        margin-top:12px;
+    }
+
+    .mobicons{
+        margin-right:15px;
+    }
+    .flashsaleslong{
+        width:94%;
+    }
+
+    .search_icon{
+        width:5%;
+    }
+
+    .aboutustext p{
+        line-height: 19px;
+        font-size:11px;
+    }
+
+    .aboutustext{
+        height:9vh;
+    }
+    .holdviddiv h1{
+        width:95%;
+    }
+}
